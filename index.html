@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  <body>
+ <div class="container">
+   <div class="box1">
+     
+     <div class="box2">
+       <h2>PAGE AUTOMATION</h2>
+     </div>
+     <div>
+       <p class="p" >Page Name</p>
+         <input id="page" class="inp" type="text">
+     </div>
+     <div>
+        <p class="p" id="channel" >Channel Id</p>
+          <input id="page1" class="inp" type="text">
+      </div>
+     <div>
+        <p class="p">Page Access Token</p>
+          <input id="page2" class="inp" type="text">
+      </div>
+     <div>
+       <p class="p">Tags</p>
+         <textarea id="page3" class="text"></textarea>
+     </div>
+     <div>
+       <p class="p">Source</p>
+       <select id="page4" onchange="s()" class="inp">
+         <option value="youtube">Youtube</option>
+         <option value="instagram">Instagram</option>
+        
+       </select>
+      </div>
+     <div>
+       <p class="p">Overlay</p>
+      <select onchange="f()" class="inp">
+        <option>No</option>
+        <option>Yes</option>
+        
+      </select>
+     </div>
+     <div class="m">
+       <p class="p">Play List Id</p>
+       <input id="page5" class="inp" type="text">
+     </div>
+     <div>
+       <button onclick="fun()"  class="inp btn">Submit</button>
+     </div>
+   </div>
+ </div>
+    <div class="loader">
+      <div class="mainloader"></div>
+    </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: cursive;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #ec0449 120px, #8f50dc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  width: 500px;
+
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 20px;
+ 
+
+}
+
+
+.box2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inp {
+  box-sizing: border-box;
+  width: 100%;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+.text {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.p {
+  font-size: 20px;
+  margin: 10px 10px 10px 0px;
+}
+
+.btn {
+  margin-top: 35px;
+}
+.m{
+  display: none;
+}
+.loader{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: white;
+ top: 0;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  transition: 1s;
+ 
+  
+}
+.mainloader{
+   width: 40px;
+    height: 40px;
+    border: 15px solid #404040;
+    border-radius: 100%;
+  border-top-color: white;
+    animation-name: komal;
+    animation-duration: 0.3s;
+   animation-iteration-count: infinite;
+  position: absolute;
+  opacity: 20px;
+  margin: auto;
+ top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+}
+@keyframes komal {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media(max-width:700px){
+  body{
+    font-family: cursive;
+  }
+  .container{
+     background-image: linear-gradient(to right bottom, #7a7a7a 140px, #535050 );
+  }
+  .box1{
+    border-radius: 0px;
+    width: 100%;
+    border: none;
+   height: 100%;
+    color: white;
+    background: transparent;
+   
+  }
+ 
+}
+@media(max-width:389px){
+  .box1{
+    border-radius: 0px;
+    width: 100%;
+    border: none;
+ 
+    color: white;
+    background: transparent;
+
+  }
+  .box2 {
+  
+    margin-bottom: 10px;
+  }
+  /* .inp{
+    height: 25px;
+  } */
+  .text{
+    height: 60px;
+  }
+  
+}
